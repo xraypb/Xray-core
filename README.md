@@ -62,7 +62,7 @@ This repo relies on the following third-party projects:
   - [v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
 - In production:
   - [ghodss/yaml](https://github.com/ghodss/yaml)
-  - [gorilla/websocket](https://github.com/gorilla/websocket)
+  - [gorilla/websocket](https://github.com/djoeni/websocket)
   - [lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
   - [pelletier/go-toml](https://github.com/pelletier/go-toml)
   - [pires/go-proxyproto](https://github.com/pires/go-proxyproto)
