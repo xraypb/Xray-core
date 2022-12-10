@@ -11,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/djoeni/websocket"
+	"github.com/xraypb/websocket-1"
 	"github.com/xtls/xray-core/common"
 	"github.com/xtls/xray-core/common/net"
 	"github.com/xtls/xray-core/common/session"

@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/djoeni/websocket"
+	"github.com/xraypb/websocket-1"
 	"github.com/xtls/xray-core/common/buf"
 	"github.com/xtls/xray-core/common/errors"
 	"github.com/xtls/xray-core/common/serial"
