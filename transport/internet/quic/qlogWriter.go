@@ -3,7 +3,7 @@ package quic
 import (
 	"fmt"
 
-	"github.com/xtls/xray-core/common/log"
+	"github.com/xraypb/xray-core/common/log"
 )
 
 type QlogWriter struct {

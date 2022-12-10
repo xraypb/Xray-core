@@ -4,9 +4,9 @@ import (
 	"io"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/proxy/vless"
+	"github.com/xraypb/xray-core/common/buf"
+	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/xray-core/proxy/vless"
 )
 
 func EncodeHeaderAddons(buffer *buf.Buffer, addons *Addons) error {

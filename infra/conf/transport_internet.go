@@ -9,19 +9,19 @@ import (
 	"strings"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/common/platform/filesystem"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/domainsocket"
-	httpheader "github.com/xtls/xray-core/transport/internet/headers/http"
-	"github.com/xtls/xray-core/transport/internet/http"
-	"github.com/xtls/xray-core/transport/internet/kcp"
-	"github.com/xtls/xray-core/transport/internet/quic"
-	"github.com/xtls/xray-core/transport/internet/tcp"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/websocket"
-	"github.com/xtls/xray-core/transport/internet/xtls"
+	"github.com/xraypb/xray-core/common/platform/filesystem"
+	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/xray-core/common/serial"
+	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/xray-core/transport/internet/domainsocket"
+	httpheader "github.com/xraypb/xray-core/transport/internet/headers/http"
+	"github.com/xraypb/xray-core/transport/internet/http"
+	"github.com/xraypb/xray-core/transport/internet/kcp"
+	"github.com/xraypb/xray-core/transport/internet/quic"
+	"github.com/xraypb/xray-core/transport/internet/tcp"
+	"github.com/xraypb/xray-core/transport/internet/tls"
+	"github.com/xraypb/xray-core/transport/internet/websocket"
+	"github.com/xraypb/xray-core/transport/internet/xtls"
 )
 
 var (
@@ -533,7 +533,7 @@ type SocketConfig struct {
 	DialerProxy          string      `json:"dialerProxy"`
 	TCPKeepAliveInterval int32       `json:"tcpKeepAliveInterval"`
 	TCPKeepAliveIdle     int32       `json:"tcpKeepAliveIdle"`
-        TCPCongestion        string      `json:"tcpCongestion"`
+	TCPCongestion        string      `json:"tcpCongestion"`
 }
 
 // Build implements Buildable.
@@ -582,7 +582,7 @@ func (c *SocketConfig) Build() (*internet.SocketConfig, error) {
 		DialerProxy:          c.DialerProxy,
 		TcpKeepAliveInterval: c.TCPKeepAliveInterval,
 		TcpKeepAliveIdle:     c.TCPKeepAliveIdle,
-                TcpCongestion:        c.TCPCongestion,
+		TcpCongestion:        c.TCPCongestion,
 	}, nil
 }
 

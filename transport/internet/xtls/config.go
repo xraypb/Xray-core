@@ -8,13 +8,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/ocsp"
+	"github.com/xraypb/xray-core/common/platform/filesystem"
+	"github.com/xraypb/xray-core/common/protocol/tls/cert"
+	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/xray-core/transport/internet/tls"
 	xtls "github.com/xtls/go"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/ocsp"
-	"github.com/xtls/xray-core/common/platform/filesystem"
-	"github.com/xtls/xray-core/common/protocol/tls/cert"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/tls"
 )
 
 var globalSessionCache = xtls.NewLRUClientSessionCache(128)

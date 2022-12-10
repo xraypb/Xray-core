@@ -3,10 +3,10 @@ package xtls
 import (
 	xtls "github.com/xtls/go"
 
-	"github.com/xtls/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/net"
 )
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
 
 type Conn struct {
 	*xtls.Conn
