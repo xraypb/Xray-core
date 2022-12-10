@@ -7,7 +7,6 @@ require (
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.2
 	github.com/google/go-cmp v0.5.9
-	github.com/xraypb/websocket-1 v1.0.0
 	github.com/lucas-clemente/quic-go v0.31.0
 	github.com/marten-seemann/qtls-go1-18 v0.1.3
 	github.com/miekg/dns v1.1.50
@@ -20,6 +19,7 @@ require (
 	github.com/seiflotfy/cuckoofilter v0.0.0-20220411075957-e3b120b3f5fb
 	github.com/stretchr/testify v1.8.1
 	github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e
+	github.com/xraypb/websocket-1 v1.0.1
 	github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837
 	go.starlark.net v0.0.0-20221028183056-acb66ad56dd2
 	golang.org/x/crypto v0.3.0
