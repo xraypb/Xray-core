@@ -1,31 +1,31 @@
 package outbound
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
 
 import (
 	"context"
 	"syscall"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/platform"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/common/xudp"
-	core "github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy/vless"
-	"github.com/xtls/xray-core/proxy/vless/encoding"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/xtls"
+	"github.com/xraypb/xray-core/common"
+	"github.com/xraypb/xray-core/common/buf"
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/platform"
+	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/xray-core/common/retry"
+	"github.com/xraypb/xray-core/common/session"
+	"github.com/xraypb/xray-core/common/signal"
+	"github.com/xraypb/xray-core/common/task"
+	"github.com/xraypb/xray-core/common/xudp"
+	core "github.com/xraypb/xray-core/core"
+	"github.com/xraypb/xray-core/features/policy"
+	"github.com/xraypb/xray-core/features/stats"
+	"github.com/xraypb/xray-core/proxy/vless"
+	"github.com/xraypb/xray-core/proxy/vless/encoding"
+	"github.com/xraypb/xray-core/transport"
+	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/xray-core/transport/internet/stat"
+	"github.com/xraypb/xray-core/transport/internet/tls"
+	"github.com/xraypb/xray-core/transport/internet/xtls"
 )
 
 var xtls_show = false
@@ -243,7 +243,7 @@ func (h *Handler) Process(ctx context.Context, link *transport.Link, dialer inte
 			if statConn != nil {
 				counter = statConn.WriteCounter
 			}
-			err = encoding.XtlsWrite(clientReader, serverWriter, timer, netConn, counter, ctx, &userUUID, &numberOfPacketToFilter, 
+			err = encoding.XtlsWrite(clientReader, serverWriter, timer, netConn, counter, ctx, &userUUID, &numberOfPacketToFilter,
 				&enableXtls, &isTLS12orAbove, &isTLS, &cipher, &remainingServerHello)
 		} else {
 			// from clientReader.ReadMultiBuffer to serverWriter.WriteMultiBufer
@@ -280,8 +280,8 @@ func (h *Handler) Process(ctx context.Context, link *transport.Link, dialer inte
 				counter = statConn.ReadCounter
 			}
 			if requestAddons.Flow == vless.XRV {
-				err = encoding.XtlsRead(serverReader, clientWriter, timer, netConn, rawConn, counter, ctx, account.ID.Bytes(), 
-				&numberOfPacketToFilter, &enableXtls, &isTLS12orAbove, &isTLS, &cipher, &remainingServerHello)
+				err = encoding.XtlsRead(serverReader, clientWriter, timer, netConn, rawConn, counter, ctx, account.ID.Bytes(),
+					&numberOfPacketToFilter, &enableXtls, &isTLS12orAbove, &isTLS, &cipher, &remainingServerHello)
 			} else {
 				if requestAddons.Flow != vless.XRS {
 					ctx = session.ContextWithInbound(ctx, nil)

@@ -198,8 +198,8 @@ github.com/xraypb/websocket v1.5.1 h1:F3nUcK+oZTuC7RMo5uWV+EjO7gjpE/AvzRP9/mmyVG
 github.com/xraypb/websocket v1.5.1/go.mod h1:W4oRcGwr8lmJ72Xk9NyVPOqKIuTgnCxZ8pmPQqMufww=
 github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837 h1:AHhUwwFJGl27E46OpdJHplZkK09m7aETNBNzhT6t15M=
 github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837/go.mod h1:YJTRELIWrGxR1s8xcEBgxcxBfwQfMGjdvNLTjN9XFgY=
-github.com/xtls/xray-core v1.6.5 h1:orN/xTYAtEz6UyF7OMKliYOBNAfYLuZDIKzcKgzRS2w=
-github.com/xtls/xray-core v1.6.5/go.mod h1:zim9x2y26FB2qD19HyvcLvwtOy8nw+Fa9g8bCEUwaNw=
+github.com/xraypb/xray-core v1.6.5 h1:orN/xTYAtEz6UyF7OMKliYOBNAfYLuZDIKzcKgzRS2w=
+github.com/xraypb/xray-core v1.6.5/go.mod h1:zim9x2y26FB2qD19HyvcLvwtOy8nw+Fa9g8bCEUwaNw=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
 go.opencensus.io v0.18.0/go.mod h1:vKdFvxhtzZ9onBp9VKHK8z/sRpBMnKAsufL7wlDrCOA=
 go.starlark.net v0.0.0-20221028183056-acb66ad56dd2 h1:5/KzhcSqd4UgY51l17r7C5g/JiE6DRw1Vq7VJfQHuMc=

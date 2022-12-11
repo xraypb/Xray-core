@@ -1,6 +1,6 @@
 package inbound
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
 
 import (
 	"context"
@@ -10,28 +10,28 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/log"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/platform"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/common/task"
-	core "github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/dns"
-	feature_inbound "github.com/xtls/xray-core/features/inbound"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy/vless"
-	"github.com/xtls/xray-core/proxy/vless/encoding"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/xtls"
+	"github.com/xraypb/xray-core/common"
+	"github.com/xraypb/xray-core/common/buf"
+	"github.com/xraypb/xray-core/common/errors"
+	"github.com/xraypb/xray-core/common/log"
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/platform"
+	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/xray-core/common/retry"
+	"github.com/xraypb/xray-core/common/session"
+	"github.com/xraypb/xray-core/common/signal"
+	"github.com/xraypb/xray-core/common/task"
+	core "github.com/xraypb/xray-core/core"
+	"github.com/xraypb/xray-core/features/dns"
+	feature_inbound "github.com/xraypb/xray-core/features/inbound"
+	"github.com/xraypb/xray-core/features/policy"
+	"github.com/xraypb/xray-core/features/routing"
+	"github.com/xraypb/xray-core/features/stats"
+	"github.com/xraypb/xray-core/proxy/vless"
+	"github.com/xraypb/xray-core/proxy/vless/encoding"
+	"github.com/xraypb/xray-core/transport/internet/stat"
+	"github.com/xraypb/xray-core/transport/internet/tls"
+	"github.com/xraypb/xray-core/transport/internet/xtls"
 )
 
 var xtls_show = false
@@ -493,8 +493,8 @@ func (h *Handler) Process(ctx context.Context, network net.Network, connection s
 		}
 	case "", "none":
 		if accountFlow == vless.XRV && !allowNoneFlow {
-			return newError(account.ID.String() + " is not able to use " + vless.XRV + 
-			". Note the pure tls proxy has certain tls in tls characters. Append \",none\" in flow to suppress").AtWarning()
+			return newError(account.ID.String() + " is not able to use " + vless.XRV +
+				". Note the pure tls proxy has certain tls in tls characters. Append \",none\" in flow to suppress").AtWarning()
 		}
 	default:
 		return newError("unknown request flow " + requestAddons.Flow).AtWarning()
@@ -545,8 +545,8 @@ func (h *Handler) Process(ctx context.Context, network net.Network, connection s
 			//TODO enable splice
 			ctx = session.ContextWithInbound(ctx, nil)
 			if requestAddons.Flow == vless.XRV {
-				err = encoding.XtlsRead(clientReader, serverWriter, timer, netConn, rawConn, counter, ctx, account.ID.Bytes(), 
-				&numberOfPacketToFilter, &enableXtls, &isTLS12orAbove, &isTLS, &cipher, &remainingServerHello)
+				err = encoding.XtlsRead(clientReader, serverWriter, timer, netConn, rawConn, counter, ctx, account.ID.Bytes(),
+					&numberOfPacketToFilter, &enableXtls, &isTLS12orAbove, &isTLS, &cipher, &remainingServerHello)
 			} else {
 				err = encoding.ReadV(clientReader, serverWriter, timer, iConn.(*xtls.Conn), rawConn, counter, ctx)
 			}
@@ -600,7 +600,7 @@ func (h *Handler) Process(ctx context.Context, network net.Network, connection s
 			if statConn != nil {
 				counter = statConn.WriteCounter
 			}
-			err = encoding.XtlsWrite(serverReader, clientWriter, timer, netConn, counter, ctx, &userUUID, &numberOfPacketToFilter, 
+			err = encoding.XtlsWrite(serverReader, clientWriter, timer, netConn, counter, ctx, &userUUID, &numberOfPacketToFilter,
 				&enableXtls, &isTLS12orAbove, &isTLS, &cipher, &remainingServerHello)
 		} else {
 			// from serverReader.ReadMultiBuffer to clientWriter.WriteMultiBufer

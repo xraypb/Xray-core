@@ -9,12 +9,12 @@ import (
 	"github.com/lucas-clemente/quic-go"
 	"github.com/lucas-clemente/quic-go/logging"
 	"github.com/lucas-clemente/quic-go/qlog"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
+	"github.com/xraypb/xray-core/common"
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/task"
+	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/xray-core/transport/internet/stat"
+	"github.com/xraypb/xray-core/transport/internet/tls"
 )
 
 type connectionContext struct {
@@ -140,8 +140,8 @@ func (s *clientConnections) openConnection(ctx context.Context, destAddr net.Add
 	}
 
 	quicConfig := &quic.Config{
-		ConnectionIDLength: 12,
-		KeepAlivePeriod:    0,
+		ConnectionIDLength:   12,
+		KeepAlivePeriod:      0,
 		HandshakeIdleTimeout: time.Second * 8,
 		MaxIdleTimeout:       time.Second * 300,
 		Tracer: qlog.NewTracer(func(_ logging.Perspective, connID []byte) io.WriteCloser {

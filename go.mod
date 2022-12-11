@@ -21,7 +21,7 @@ require (
 	github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e
 	github.com/xraypb/websocket v1.5.1
 	github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837
-	github.com/xtls/xray-core v1.6.5
+	github.com/xraypb/xray-core v1.6.5
 	go.starlark.net v0.0.0-20221028183056-acb66ad56dd2
 	golang.org/x/crypto v0.4.0
 	golang.org/x/net v0.4.0

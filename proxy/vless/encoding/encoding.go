@@ -1,6 +1,6 @@
 package encoding
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -14,17 +14,17 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy/vless"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/xtls"
+	"github.com/xraypb/xray-core/common/buf"
+	"github.com/xraypb/xray-core/common/errors"
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/xray-core/common/session"
+	"github.com/xraypb/xray-core/common/signal"
+	"github.com/xraypb/xray-core/features/stats"
+	"github.com/xraypb/xray-core/proxy/vless"
+	"github.com/xraypb/xray-core/transport/internet/stat"
+	"github.com/xraypb/xray-core/transport/internet/tls"
+	"github.com/xraypb/xray-core/transport/internet/xtls"
 )
 
 const (
@@ -247,8 +247,8 @@ func ReadV(reader buf.Reader, writer buf.Writer, timer signal.ActivityUpdater, c
 }
 
 // XtlsRead filter and read xtls protocol
-func XtlsRead(reader buf.Reader, writer buf.Writer, timer signal.ActivityUpdater, conn net.Conn, rawConn syscall.RawConn, 
-	counter stats.Counter, ctx context.Context, userUUID []byte, numberOfPacketToFilter *int, enableXtls *bool, 
+func XtlsRead(reader buf.Reader, writer buf.Writer, timer signal.ActivityUpdater, conn net.Conn, rawConn syscall.RawConn,
+	counter stats.Counter, ctx context.Context, userUUID []byte, numberOfPacketToFilter *int, enableXtls *bool,
 	isTLS12orAbove *bool, isTLS *bool, cipher *uint16, remainingServerHello *int32) error {
 	err := func() error {
 		var ct stats.Counter
@@ -326,8 +326,8 @@ func XtlsRead(reader buf.Reader, writer buf.Writer, timer signal.ActivityUpdater
 }
 
 // XtlsWrite filter and write xtls protocol
-func XtlsWrite(reader buf.Reader, writer buf.Writer, timer signal.ActivityUpdater, conn net.Conn, counter stats.Counter, 
-	ctx context.Context, userUUID *[]byte, numberOfPacketToFilter *int, enableXtls *bool, isTLS12orAbove *bool, isTLS *bool, 
+func XtlsWrite(reader buf.Reader, writer buf.Writer, timer signal.ActivityUpdater, conn net.Conn, counter stats.Counter,
+	ctx context.Context, userUUID *[]byte, numberOfPacketToFilter *int, enableXtls *bool, isTLS12orAbove *bool, isTLS *bool,
 	cipher *uint16, remainingServerHello *int32) error {
 	err := func() error {
 		var ct stats.Counter
@@ -399,7 +399,7 @@ func XtlsWrite(reader buf.Reader, writer buf.Writer, timer signal.ActivityUpdate
 }
 
 // XtlsFilterTls filter and recognize tls 1.3 and other info
-func XtlsFilterTls(buffer buf.MultiBuffer, numberOfPacketToFilter *int, enableXtls *bool, isTLS12orAbove *bool, isTLS *bool, 
+func XtlsFilterTls(buffer buf.MultiBuffer, numberOfPacketToFilter *int, enableXtls *bool, isTLS12orAbove *bool, isTLS *bool,
 	cipher *uint16, remainingServerHello *int32, ctx context.Context) {
 	for _, b := range buffer {
 		*numberOfPacketToFilter--
@@ -411,8 +411,8 @@ func XtlsFilterTls(buffer buf.MultiBuffer, numberOfPacketToFilter *int, enableXt
 				*isTLS = true
 				if b.Len() >= 79 && *remainingServerHello >= 79 {
 					sessionIdLen := int32(b.Byte(43))
-					cipherSuite := b.BytesRange(43 + sessionIdLen + 1, 43 + sessionIdLen + 3)
-					*cipher = uint16(cipherSuite[0]) << 8 | uint16(cipherSuite[1])
+					cipherSuite := b.BytesRange(43+sessionIdLen+1, 43+sessionIdLen+3)
+					*cipher = uint16(cipherSuite[0])<<8 | uint16(cipherSuite[1])
 				} else {
 					newError("XtlsFilterTls short server hello, tls 1.2 or older? ", b.Len(), " ", *remainingServerHello).WriteToLog(session.ExportIDToError(ctx))
 				}
@@ -431,7 +431,7 @@ func XtlsFilterTls(buffer buf.MultiBuffer, numberOfPacketToFilter *int, enableXt
 				v, ok := Tls13CipherSuiteDic[*cipher]
 				if !ok {
 					v = "Old cipher: " + strconv.FormatUint(uint64(*cipher), 16)
-				} else if (v != "TLS_AES_128_CCM_8_SHA256") {
+				} else if v != "TLS_AES_128_CCM_8_SHA256" {
 					*enableXtls = true
 				}
 				newError("XtlsFilterTls found tls 1.3! ", b.Len(), " ", v).WriteToLog(session.ExportIDToError(ctx))
@@ -582,9 +582,9 @@ func XtlsUnpadding(ctx context.Context, buffer buf.MultiBuffer, userUUID []byte,
 }
 
 var Tls13CipherSuiteDic = map[uint16]string{
-	0x1301 : "TLS_AES_128_GCM_SHA256",
-	0x1302 : "TLS_AES_256_GCM_SHA384",
-	0x1303 : "TLS_CHACHA20_POLY1305_SHA256",
-	0x1304 : "TLS_AES_128_CCM_SHA256",
-	0x1305 : "TLS_AES_128_CCM_8_SHA256",
+	0x1301: "TLS_AES_128_GCM_SHA256",
+	0x1302: "TLS_AES_256_GCM_SHA384",
+	0x1303: "TLS_CHACHA20_POLY1305_SHA256",
+	0x1304: "TLS_AES_128_CCM_SHA256",
+	0x1305: "TLS_AES_128_CCM_8_SHA256",
 }
