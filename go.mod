@@ -1,4 +1,4 @@
-module github.com/xtls/xray-core
+module github.com/xraypb/xray-core
 
 go 1.19
 
@@ -7,7 +7,7 @@ require (
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.2
 	github.com/google/go-cmp v0.5.9
-	github.com/xraypb/websocket v1.5.1
+	github.com/gorilla/websocket v1.5.0
 	github.com/lucas-clemente/quic-go v0.31.1
 	github.com/marten-seemann/qtls-go1-18 v0.1.3
 	github.com/miekg/dns v1.1.50
@@ -21,6 +21,7 @@ require (
 	github.com/stretchr/testify v1.8.1
 	github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e
 	github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837
+	github.com/xtls/xray-core v1.6.5
 	go.starlark.net v0.0.0-20221028183056-acb66ad56dd2
 	golang.org/x/crypto v0.4.0
 	golang.org/x/net v0.4.0
@@ -42,11 +43,12 @@ require (
 	github.com/google/pprof v0.0.0-20221118152302-e6195bd50e26 // indirect
 	github.com/klauspost/compress v1.15.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.1 // indirect
-	github.com/kr/pretty v0.3.1 // indirect
+	github.com/kr/text v0.2.0 // indirect
 	github.com/marten-seemann/qtls-go1-19 v0.1.1 // indirect
 	github.com/onsi/ginkgo/v2 v2.5.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/riobard/go-bloom v0.0.0-20200614022211-cdc8013cb5b3 // indirect
+	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
 	golang.org/x/exp v0.0.0-20221126150942-6ab00d035af9 // indirect
 	golang.org/x/mod v0.7.0 // indirect
