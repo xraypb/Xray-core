@@ -193,8 +193,8 @@ github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e h1:5QefA066A1tF
 github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e/go.mod h1:5t19P9LBIrNamL6AcMQOncg/r10y3Pc01AbHeMhwlpU=
 github.com/viant/assertly v0.4.8/go.mod h1:aGifi++jvCrUaklKEKT0BU95igDNaqkvz+49uaYMPRU=
 github.com/viant/toolbox v0.24.0/go.mod h1:OxMCG57V0PXuIP2HNQrtJf2CjqdmbrOx5EkMILuUhzM=
-github.com/xraypb/websocket v1.0.1 h1:tltqYeFRGH4d3U1/eZyELB+ZNetWDwrhvXkA3egCTWE=
-github.com/xraypb/websocket v1.0.1/go.mod h1:6++NEpaXf3TbOB1FHwgopY59XqWCHxPDzohbFxmUSv0=
+github.com/xraypb/websocket v1.5.0 h1:nqW242yf8tVh4w0PyckPldPJGiouKQRgRVYVongGvZM=
+github.com/xraypb/websocket v1.5.0/go.mod h1:W4oRcGwr8lmJ72Xk9NyVPOqKIuTgnCxZ8pmPQqMufww=
 github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837 h1:AHhUwwFJGl27E46OpdJHplZkK09m7aETNBNzhT6t15M=
 github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837/go.mod h1:YJTRELIWrGxR1s8xcEBgxcxBfwQfMGjdvNLTjN9XFgY=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
