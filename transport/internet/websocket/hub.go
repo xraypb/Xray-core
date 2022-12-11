@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/djoeni/websocket"
+	"github.com/sihiver/websocket"
 	"github.com/xraypb/xray-core/common"
 	"github.com/xraypb/xray-core/common/net"
 	http_proto "github.com/xraypb/xray-core/common/protocol/http"
