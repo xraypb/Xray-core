@@ -1,8 +1,8 @@
 package internet
 
 import (
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/features"
+	"github.com/xraypb/xray-core/common/serial"
+	"github.com/xraypb/xray-core/features"
 )
 
 type ConfigCreator func() interface{}

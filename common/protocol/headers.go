@@ -5,9 +5,9 @@ import (
 
 	"golang.org/x/sys/cpu"
 
-	"github.com/xtls/xray-core/common/bitmask"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/uuid"
+	"github.com/xraypb/xray-core/common/bitmask"
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/uuid"
 )
 
 // RequestCommand is a custom command in a proxy request.

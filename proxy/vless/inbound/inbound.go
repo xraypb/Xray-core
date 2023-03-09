@@ -1,6 +1,6 @@
 package inbound
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -15,27 +15,27 @@ import (
 	"unsafe"
 
 	"github.com/pires/go-proxyproto"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/log"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/dns"
-	feature_inbound "github.com/xtls/xray-core/features/inbound"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy/vless"
-	"github.com/xtls/xray-core/proxy/vless/encoding"
-	"github.com/xtls/xray-core/transport/internet/reality"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
+	"github.com/xraypb/xray-core/common"
+	"github.com/xraypb/xray-core/common/buf"
+	"github.com/xraypb/xray-core/common/errors"
+	"github.com/xraypb/xray-core/common/log"
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/xray-core/common/retry"
+	"github.com/xraypb/xray-core/common/session"
+	"github.com/xraypb/xray-core/common/signal"
+	"github.com/xraypb/xray-core/common/task"
+	"github.com/xraypb/xray-core/core"
+	"github.com/xraypb/xray-core/features/dns"
+	feature_inbound "github.com/xraypb/xray-core/features/inbound"
+	"github.com/xraypb/xray-core/features/policy"
+	"github.com/xraypb/xray-core/features/routing"
+	"github.com/xraypb/xray-core/features/stats"
+	"github.com/xraypb/xray-core/proxy/vless"
+	"github.com/xraypb/xray-core/proxy/vless/encoding"
+	"github.com/xraypb/xray-core/transport/internet/reality"
+	"github.com/xraypb/xray-core/transport/internet/stat"
+	"github.com/xraypb/xray-core/transport/internet/tls"
 )
 
 func init() {
