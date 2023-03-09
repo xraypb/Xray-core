@@ -3,7 +3,7 @@ package shadowsocks_2022
 import (
 	"context"
 
-	"github.com/sagernet/sing-shadowsocks"
+	shadowsocks "github.com/sagernet/sing-shadowsocks"
 	"github.com/sagernet/sing-shadowsocks/shadowaead_2022"
 	C "github.com/sagernet/sing/common"
 	B "github.com/sagernet/sing/common/buf"
@@ -11,14 +11,14 @@ import (
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/log"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/xraypb/xray-core/common"
+	"github.com/xraypb/xray-core/common/buf"
+	"github.com/xraypb/xray-core/common/log"
+	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/xray-core/common/session"
+	"github.com/xraypb/xray-core/features/routing"
+	"github.com/xraypb/xray-core/transport/internet/stat"
 )
 
 func init() {

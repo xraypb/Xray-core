@@ -4,8 +4,8 @@ import (
 	"net"
 	"time"
 
+	"github.com/xraypb/xray-core/transport/internet"
 	"github.com/xtls/reality"
-	"github.com/xtls/xray-core/transport/internet"
 )
 
 func (c *Config) GetREALITYConfig() *reality.Config {

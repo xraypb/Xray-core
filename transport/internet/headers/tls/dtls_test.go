@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	. "github.com/xtls/xray-core/transport/internet/headers/tls"
+	"github.com/xraypb/xray-core/common"
+	"github.com/xraypb/xray-core/common/buf"
+	. "github.com/xraypb/xray-core/transport/internet/headers/tls"
 )
 
 func TestDTLSWrite(t *testing.T) {
