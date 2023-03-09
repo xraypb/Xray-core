@@ -9,12 +9,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/dice"
-	"github.com/xraypb/xray-core/common/protocol"
-	"github.com/xraypb/xray-core/common/serial"
-	"github.com/xraypb/xray-core/common/task"
-	"github.com/xraypb/xray-core/proxy/vmess/aead"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/dice"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/serial"
+	"github.com/xraypb/Xray-core/common/task"
+	"github.com/xraypb/Xray-core/proxy/vmess/aead"
 )
 
 const (

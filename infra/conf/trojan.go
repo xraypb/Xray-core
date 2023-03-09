@@ -7,10 +7,10 @@ import (
 	"syscall"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/protocol"
-	"github.com/xraypb/xray-core/common/serial"
-	"github.com/xraypb/xray-core/proxy/trojan"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/serial"
+	"github.com/xraypb/Xray-core/proxy/trojan"
 )
 
 // TrojanServerTarget is configuration of a single trojan server

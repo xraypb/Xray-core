@@ -5,10 +5,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/session"
-	"github.com/xraypb/xray-core/features/dns"
-	"github.com/xraypb/xray-core/features/outbound"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/session"
+	"github.com/xraypb/Xray-core/features/dns"
+	"github.com/xraypb/Xray-core/features/outbound"
 )
 
 var effectiveSystemDialer SystemDialer = &DefaultSystemDialer{}

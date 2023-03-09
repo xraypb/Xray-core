@@ -1,4 +1,4 @@
-package platform // import "github.com/xraypb/xray-core/common/platform"
+package platform // import "github.com/xraypb/Xray-core/common/platform"
 
 import (
 	"os"

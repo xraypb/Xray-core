@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/session"
-	"github.com/xraypb/xray-core/transport/internet"
-	"github.com/xraypb/xray-core/transport/internet/reality"
-	"github.com/xraypb/xray-core/transport/internet/stat"
-	"github.com/xraypb/xray-core/transport/internet/tls"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/session"
+	"github.com/xraypb/Xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/transport/internet/reality"
+	"github.com/xraypb/Xray-core/transport/internet/stat"
+	"github.com/xraypb/Xray-core/transport/internet/tls"
 	goreality "github.com/xtls/reality"
 )
 

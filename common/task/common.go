@@ -1,6 +1,6 @@
 package task
 
-import "github.com/xraypb/xray-core/common"
+import "github.com/xraypb/Xray-core/common"
 
 // Close returns a func() that closes v.
 func Close(v interface{}) func() error {

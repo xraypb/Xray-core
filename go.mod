@@ -5,11 +5,11 @@ go 1.20
 replace github.com/refraction-networking/utls => github.com/xtls/utls v1.2.3
 
 require (
+	github.com/djoeni/websocket v0.7.1
 	github.com/ghodss/yaml v1.0.1-0.20220118164431-d8423dcdf344
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.2
 	github.com/google/go-cmp v0.5.9
-	github.com/djoeni/websocket v0.7.1
 	github.com/miekg/dns v1.1.51
 	github.com/pelletier/go-toml v1.9.5
 	github.com/pires/go-proxyproto v0.6.2
@@ -41,6 +41,7 @@ require (
 	github.com/go-task/slim-sprig v0.0.0-20210107165309-348f09dbbbc0 // indirect
 	github.com/google/btree v1.1.2 // indirect
 	github.com/google/pprof v0.0.0-20230207041349-798e818bf904 // indirect
+	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/klauspost/compress v1.15.15 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.3 // indirect
 	github.com/onsi/ginkgo/v2 v2.8.1 // indirect

@@ -1,14 +1,14 @@
 package stats
 
-//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 import (
 	"context"
 	"sync"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/errors"
-	"github.com/xraypb/xray-core/features/stats"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/errors"
+	"github.com/xraypb/Xray-core/features/stats"
 )
 
 // Manager is an implementation of stats.Manager.

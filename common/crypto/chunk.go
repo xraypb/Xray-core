@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/buf"
 )
 
 // ChunkSizeDecoder is a utility class to decode size value from bytes.

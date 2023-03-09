@@ -6,11 +6,11 @@ import (
 	B "github.com/sagernet/sing/common/buf"
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"
-	"github.com/xraypb/xray-core/common/buf"
-	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/net"
 )
 
-//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 func toDestination(socksaddr M.Socksaddr, network net.Network) net.Destination {
 	if socksaddr.IsFqdn() {

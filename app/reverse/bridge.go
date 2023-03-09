@@ -5,13 +5,13 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/xraypb/xray-core/common/mux"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/session"
-	"github.com/xraypb/xray-core/common/task"
-	"github.com/xraypb/xray-core/features/routing"
-	"github.com/xraypb/xray-core/transport"
-	"github.com/xraypb/xray-core/transport/pipe"
+	"github.com/xraypb/Xray-core/common/mux"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/session"
+	"github.com/xraypb/Xray-core/common/task"
+	"github.com/xraypb/Xray-core/features/routing"
+	"github.com/xraypb/Xray-core/transport"
+	"github.com/xraypb/Xray-core/transport/pipe"
 )
 
 // Bridge is a component in reverse proxy, that relays connections from Portal to local address.

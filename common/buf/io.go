@@ -7,8 +7,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/xraypb/xray-core/features/stats"
-	"github.com/xraypb/xray-core/transport/internet/stat"
+	"github.com/xraypb/Xray-core/features/stats"
+	"github.com/xraypb/Xray-core/transport/internet/stat"
 )
 
 // Reader extends io.Reader with MultiBuffer.

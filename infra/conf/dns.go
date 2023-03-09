@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/xraypb/xray-core/app/dns"
-	"github.com/xraypb/xray-core/app/router"
-	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/Xray-core/app/dns"
+	"github.com/xraypb/Xray-core/app/router"
+	"github.com/xraypb/Xray-core/common/net"
 )
 
 type NameServerConfig struct {

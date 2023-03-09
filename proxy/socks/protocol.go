@@ -4,10 +4,10 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/buf"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
 )
 
 const (

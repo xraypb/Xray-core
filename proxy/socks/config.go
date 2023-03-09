@@ -1,6 +1,6 @@
 package socks
 
-import "github.com/xraypb/xray-core/common/protocol"
+import "github.com/xraypb/Xray-core/common/protocol"
 
 func (a *Account) Equals(another protocol.Account) bool {
 	if account, ok := another.(*Account); ok {

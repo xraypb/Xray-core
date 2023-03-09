@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/xraypb/xray-core/common/platform/filesystem"
+	"github.com/xraypb/Xray-core/common/platform/filesystem"
 	"golang.org/x/crypto/ocsp"
 )
 

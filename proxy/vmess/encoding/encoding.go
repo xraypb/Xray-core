@@ -1,11 +1,11 @@
 package encoding
 
 import (
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
 )
 
-//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 const (
 	Version = byte(1)

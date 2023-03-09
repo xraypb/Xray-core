@@ -3,12 +3,12 @@ package taggedimpl
 import (
 	"context"
 
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/net/cnc"
-	"github.com/xraypb/xray-core/common/session"
-	"github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/features/routing"
-	"github.com/xraypb/xray-core/transport/internet/tagged"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/net/cnc"
+	"github.com/xraypb/Xray-core/common/session"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/features/routing"
+	"github.com/xraypb/Xray-core/transport/internet/tagged"
 )
 
 func DialTaggedOutbound(ctx context.Context, dest net.Destination, tag string) (net.Conn, error) {

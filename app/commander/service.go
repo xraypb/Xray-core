@@ -3,7 +3,7 @@ package commander
 import (
 	"context"
 
-	"github.com/xraypb/xray-core/common"
+	"github.com/xraypb/Xray-core/common"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )

@@ -7,7 +7,7 @@
 package dns
 
 import (
-	net "github.com/xraypb/xray-core/common/net"
+	net "github.com/xraypb/Xray-core/common/net"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

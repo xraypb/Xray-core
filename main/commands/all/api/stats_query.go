@@ -1,8 +1,8 @@
 package api
 
 import (
-	statsService "github.com/xraypb/xray-core/app/stats/command"
-	"github.com/xraypb/xray-core/main/commands/base"
+	statsService "github.com/xraypb/Xray-core/app/stats/command"
+	"github.com/xraypb/Xray-core/main/commands/base"
 )
 
 var cmdQueryStats = &base.Command{

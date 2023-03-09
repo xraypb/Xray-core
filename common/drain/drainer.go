@@ -4,7 +4,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/xraypb/xray-core/common/dice"
+	"github.com/xraypb/Xray-core/common/dice"
 )
 
 type BehaviorSeedLimitedDrainer struct {
