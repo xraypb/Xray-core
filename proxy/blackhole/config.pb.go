@@ -7,7 +7,7 @@
 package blackhole
 
 import (
-	serial "github.com/xraypb/xray-core/common/serial"
+	serial "github.com/xraypb/Xray-core/common/serial"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

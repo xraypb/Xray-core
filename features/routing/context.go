@@ -1,7 +1,7 @@
 package routing
 
 import (
-	"github.com/xraypb/xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/net"
 )
 
 // Context is a feature to store connection information for routing.

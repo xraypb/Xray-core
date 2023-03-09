@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/errors"
-	. "github.com/xraypb/xray-core/common/retry"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/errors"
+	. "github.com/xraypb/Xray-core/common/retry"
 )
 
 var errorTestOnly = errors.New("this is a fake error")

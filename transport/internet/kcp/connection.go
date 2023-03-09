@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/xraypb/xray-core/common/buf"
-	"github.com/xraypb/xray-core/common/signal"
-	"github.com/xraypb/xray-core/common/signal/semaphore"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/signal"
+	"github.com/xraypb/Xray-core/common/signal/semaphore"
 )
 
 var (

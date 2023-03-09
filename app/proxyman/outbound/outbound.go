@@ -1,17 +1,17 @@
 package outbound
 
-//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 import (
 	"context"
 	"strings"
 	"sync"
 
-	"github.com/xraypb/xray-core/app/proxyman"
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/errors"
-	"github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/features/outbound"
+	"github.com/xraypb/Xray-core/app/proxyman"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/errors"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/features/outbound"
 )
 
 // Manager is to manage all outbound handlers.

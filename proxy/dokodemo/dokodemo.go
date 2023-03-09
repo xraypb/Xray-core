@@ -1,24 +1,24 @@
 package dokodemo
 
-//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 import (
 	"context"
 	"sync/atomic"
 	"time"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/buf"
-	"github.com/xraypb/xray-core/common/log"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/protocol"
-	"github.com/xraypb/xray-core/common/session"
-	"github.com/xraypb/xray-core/common/signal"
-	"github.com/xraypb/xray-core/common/task"
-	"github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/features/policy"
-	"github.com/xraypb/xray-core/features/routing"
-	"github.com/xraypb/xray-core/transport/internet/stat"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/log"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/session"
+	"github.com/xraypb/Xray-core/common/signal"
+	"github.com/xraypb/Xray-core/common/task"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/features/policy"
+	"github.com/xraypb/Xray-core/features/routing"
+	"github.com/xraypb/Xray-core/transport/internet/stat"
 )
 
 func init() {

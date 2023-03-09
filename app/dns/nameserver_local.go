@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xraypb/xray-core/common/log"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/features/dns"
-	"github.com/xraypb/xray-core/features/dns/localdns"
+	"github.com/xraypb/Xray-core/common/log"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/features/dns"
+	"github.com/xraypb/Xray-core/features/dns/localdns"
 )
 
 // LocalNameServer is an wrapper over local DNS feature.

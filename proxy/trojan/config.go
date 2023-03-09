@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	fmt "fmt"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/protocol"
 )
 
 // MemoryAccount is an account type converted from Account.

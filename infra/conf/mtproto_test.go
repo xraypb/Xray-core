@@ -3,10 +3,10 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/xraypb/xray-core/common/protocol"
-	"github.com/xraypb/xray-core/common/serial"
-	. "github.com/xraypb/xray-core/infra/conf"
-	"github.com/xraypb/xray-core/proxy/mtproto"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/serial"
+	. "github.com/xraypb/Xray-core/infra/conf"
+	"github.com/xraypb/Xray-core/proxy/mtproto"
 )
 
 func TestMTProtoServerConfig(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/transport/internet"
 	"github.com/xtls/reality"
 )
 

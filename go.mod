@@ -1,5 +1,4 @@
 module github.com/xraypb/Xray-core
-
 go 1.20
 
 replace github.com/refraction-networking/utls => github.com/xtls/utls v1.2.3

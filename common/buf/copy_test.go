@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/xraypb/xray-core/common/buf"
-	"github.com/xraypb/xray-core/common/errors"
-	"github.com/xraypb/xray-core/testing/mocks"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/errors"
+	"github.com/xraypb/Xray-core/testing/mocks"
 )
 
 func TestReadError(t *testing.T) {

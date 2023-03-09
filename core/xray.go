@@ -6,17 +6,17 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/serial"
-	"github.com/xraypb/xray-core/features"
-	"github.com/xraypb/xray-core/features/dns"
-	"github.com/xraypb/xray-core/features/dns/localdns"
-	"github.com/xraypb/xray-core/features/inbound"
-	"github.com/xraypb/xray-core/features/outbound"
-	"github.com/xraypb/xray-core/features/policy"
-	"github.com/xraypb/xray-core/features/routing"
-	"github.com/xraypb/xray-core/features/stats"
-	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/serial"
+	"github.com/xraypb/Xray-core/features"
+	"github.com/xraypb/Xray-core/features/dns"
+	"github.com/xraypb/Xray-core/features/dns/localdns"
+	"github.com/xraypb/Xray-core/features/inbound"
+	"github.com/xraypb/Xray-core/features/outbound"
+	"github.com/xraypb/Xray-core/features/policy"
+	"github.com/xraypb/Xray-core/features/routing"
+	"github.com/xraypb/Xray-core/features/stats"
+	"github.com/xraypb/Xray-core/transport/internet"
 )
 
 // Server is an instance of Xray. At any time, there must be at most one Server instance running.

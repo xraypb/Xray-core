@@ -3,12 +3,12 @@ package yaml
 import (
 	"io"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/cmdarg"
-	"github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/infra/conf"
-	"github.com/xraypb/xray-core/infra/conf/serial"
-	"github.com/xraypb/xray-core/main/confloader"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/cmdarg"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/infra/conf"
+	"github.com/xraypb/Xray-core/infra/conf/serial"
+	"github.com/xraypb/Xray-core/main/confloader"
 )
 
 func init() {

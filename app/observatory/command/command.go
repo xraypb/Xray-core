@@ -6,10 +6,10 @@ package command
 import (
 	"context"
 
-	"github.com/xraypb/xray-core/app/observatory"
-	"github.com/xraypb/xray-core/common"
-	core "github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/features/extension"
+	"github.com/xraypb/Xray-core/app/observatory"
+	"github.com/xraypb/Xray-core/common"
+	core "github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/features/extension"
 	"google.golang.org/grpc"
 )
 

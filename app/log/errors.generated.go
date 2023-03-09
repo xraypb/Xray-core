@@ -1,6 +1,6 @@
 package log
 
-import "github.com/xraypb/xray-core/common/errors"
+import "github.com/xraypb/Xray-core/common/errors"
 
 type errPathObjHolder struct{}
 

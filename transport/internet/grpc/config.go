@@ -3,8 +3,8 @@ package grpc
 import (
 	"net/url"
 
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/transport/internet"
 )
 
 const protocolName = "grpc"

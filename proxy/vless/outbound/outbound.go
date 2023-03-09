@@ -1,6 +1,6 @@
 package outbound
 
-//go:generate go run github.com/xraypb/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -12,25 +12,25 @@ import (
 	"unsafe"
 
 	utls "github.com/refraction-networking/utls"
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/buf"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/protocol"
-	"github.com/xraypb/xray-core/common/retry"
-	"github.com/xraypb/xray-core/common/session"
-	"github.com/xraypb/xray-core/common/signal"
-	"github.com/xraypb/xray-core/common/task"
-	"github.com/xraypb/xray-core/common/xudp"
-	"github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/features/policy"
-	"github.com/xraypb/xray-core/features/stats"
-	"github.com/xraypb/xray-core/proxy/vless"
-	"github.com/xraypb/xray-core/proxy/vless/encoding"
-	"github.com/xraypb/xray-core/transport"
-	"github.com/xraypb/xray-core/transport/internet"
-	"github.com/xraypb/xray-core/transport/internet/reality"
-	"github.com/xraypb/xray-core/transport/internet/stat"
-	"github.com/xraypb/xray-core/transport/internet/tls"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/retry"
+	"github.com/xraypb/Xray-core/common/session"
+	"github.com/xraypb/Xray-core/common/signal"
+	"github.com/xraypb/Xray-core/common/task"
+	"github.com/xraypb/Xray-core/common/xudp"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/features/policy"
+	"github.com/xraypb/Xray-core/features/stats"
+	"github.com/xraypb/Xray-core/proxy/vless"
+	"github.com/xraypb/Xray-core/proxy/vless/encoding"
+	"github.com/xraypb/Xray-core/transport"
+	"github.com/xraypb/Xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/transport/internet/reality"
+	"github.com/xraypb/Xray-core/transport/internet/stat"
+	"github.com/xraypb/Xray-core/transport/internet/tls"
 )
 
 func init() {

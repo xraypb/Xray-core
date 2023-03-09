@@ -3,17 +3,17 @@ package inbound
 import (
 	"context"
 
-	"github.com/xraypb/xray-core/app/proxyman"
-	"github.com/xraypb/xray-core/common"
-	"github.com/xraypb/xray-core/common/dice"
-	"github.com/xraypb/xray-core/common/errors"
-	"github.com/xraypb/xray-core/common/mux"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/features/policy"
-	"github.com/xraypb/xray-core/features/stats"
-	"github.com/xraypb/xray-core/proxy"
-	"github.com/xraypb/xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/app/proxyman"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/dice"
+	"github.com/xraypb/Xray-core/common/errors"
+	"github.com/xraypb/Xray-core/common/mux"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/features/policy"
+	"github.com/xraypb/Xray-core/features/stats"
+	"github.com/xraypb/Xray-core/proxy"
+	"github.com/xraypb/Xray-core/transport/internet"
 )
 
 func getStatCounter(v *core.Instance, tag string) (stats.Counter, stats.Counter) {

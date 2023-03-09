@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xraypb/xray-core/app/router"
-	"github.com/xraypb/xray-core/common/errors"
-	"github.com/xraypb/xray-core/common/net"
-	"github.com/xraypb/xray-core/common/strmatcher"
-	"github.com/xraypb/xray-core/core"
-	"github.com/xraypb/xray-core/features/dns"
-	"github.com/xraypb/xray-core/features/routing"
+	"github.com/xraypb/Xray-core/app/router"
+	"github.com/xraypb/Xray-core/common/errors"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/strmatcher"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/features/dns"
+	"github.com/xraypb/Xray-core/features/routing"
 )
 
 // Server is the interface for Name Server.
