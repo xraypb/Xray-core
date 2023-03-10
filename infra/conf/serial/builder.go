@@ -3,9 +3,9 @@ package serial
 import (
 	"io"
 
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/infra/conf"
-	"github.com/xtls/xray-core/main/confloader"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/infra/conf"
+	"github.com/xraypb/Xray-core/main/confloader"
 )
 
 func BuildConfig(files []string, formats []string) (*core.Config, error) {

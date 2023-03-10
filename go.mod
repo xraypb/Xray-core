@@ -1,4 +1,4 @@
-module github.com/xtls/xray-core
+module github.com/xraypb/Xray-core
 
 go 1.20
 
@@ -7,7 +7,7 @@ require (
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.3
 	github.com/google/go-cmp v0.5.9
-	github.com/gorilla/websocket v1.5.0
+	github.com/djoeni/websocket v0.7.1
 	github.com/miekg/dns v1.1.51
 	github.com/pelletier/go-toml v1.9.5
 	github.com/pires/go-proxyproto v0.6.2

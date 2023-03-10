@@ -25,16 +25,16 @@ import (
 	"unsafe"
 
 	utls "github.com/refraction-networking/utls"
+	"github.com/xraypb/Xray-core/common/errors"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/core"
+	"github.com/xraypb/Xray-core/transport/internet/tls"
 	"github.com/xtls/reality"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/transport/internet/tls"
 	"golang.org/x/crypto/hkdf"
 	"golang.org/x/net/http2"
 )
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 type Conn struct {
 	*reality.Conn

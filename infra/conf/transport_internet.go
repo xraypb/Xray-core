@@ -12,20 +12,20 @@ import (
 	"syscall"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/platform/filesystem"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/domainsocket"
-	httpheader "github.com/xtls/xray-core/transport/internet/headers/http"
-	"github.com/xtls/xray-core/transport/internet/http"
-	"github.com/xtls/xray-core/transport/internet/kcp"
-	"github.com/xtls/xray-core/transport/internet/quic"
-	"github.com/xtls/xray-core/transport/internet/reality"
-	"github.com/xtls/xray-core/transport/internet/tcp"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/websocket"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/platform/filesystem"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/serial"
+	"github.com/xraypb/Xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/transport/internet/domainsocket"
+	httpheader "github.com/xraypb/Xray-core/transport/internet/headers/http"
+	"github.com/xraypb/Xray-core/transport/internet/http"
+	"github.com/xraypb/Xray-core/transport/internet/kcp"
+	"github.com/xraypb/Xray-core/transport/internet/quic"
+	"github.com/xraypb/Xray-core/transport/internet/reality"
+	"github.com/xraypb/Xray-core/transport/internet/tcp"
+	"github.com/xraypb/Xray-core/transport/internet/tls"
+	"github.com/xraypb/Xray-core/transport/internet/websocket"
 )
 
 var (
@@ -616,7 +616,7 @@ type SocketConfig struct {
 	TCPKeepAliveInterval int32       `json:"tcpKeepAliveInterval"`
 	TCPKeepAliveIdle     int32       `json:"tcpKeepAliveIdle"`
 	TCPCongestion        string      `json:"tcpCongestion"`
-	TCPWindowClamp       int32	 `json:"tcpWindowClamp"`
+	TCPWindowClamp       int32       `json:"tcpWindowClamp"`
 	V6only               bool        `json:"v6only"`
 	Interface            string      `json:"interface"`
 }
@@ -668,7 +668,7 @@ func (c *SocketConfig) Build() (*internet.SocketConfig, error) {
 		TcpKeepAliveInterval: c.TCPKeepAliveInterval,
 		TcpKeepAliveIdle:     c.TCPKeepAliveIdle,
 		TcpCongestion:        c.TCPCongestion,
-		TcpWindowClamp:	      c.TCPWindowClamp,
+		TcpWindowClamp:       c.TCPWindowClamp,
 		V6Only:               c.V6only,
 		Interface:            c.Interface,
 	}, nil
