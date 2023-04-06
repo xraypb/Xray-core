@@ -8,12 +8,12 @@ package proxy
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/features/routing"
+	"github.com/xraypb/Xray-core/transport"
+	"github.com/xraypb/Xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/transport/internet/stat"
 )
 
 // An Inbound processes inbound connections.

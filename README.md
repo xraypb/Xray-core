@@ -1,12 +1,12 @@
 # Project X
 
-[Project X](https://github.com/XTLS) originates from XTLS protocol, providing a set of network tools such as [Xray-core](https://github.com/XTLS/Xray-core) and [REALITY](https://github.com/XTLS/REALITY).
+[Project X](https://github.com/XTLS) originates from XTLS protocol, providing a set of network tools such as [Xray-core](https://github.com/xraypb/Xray-core) and [REALITY](https://github.com/XTLS/REALITY).
 
-[README](https://github.com/XTLS/Xray-core#readme) is open, so feel free to submit your project [here](https://github.com/XTLS/Xray-core/pulls).
+[README](https://github.com/xraypb/Xray-core#readme) is open, so feel free to submit your project [here](https://github.com/xraypb/Xray-core/pulls).
 
 ## License
 
-[Mozilla Public License Version 2.0](https://github.com/XTLS/Xray-core/blob/main/LICENSE)
+[Mozilla Public License Version 2.0](https://github.com/xraypb/Xray-core/blob/main/LICENSE)
 
 ## Documentation
 
@@ -93,7 +93,7 @@
 
 ## Contributing
 
-[Code of Conduct](https://github.com/XTLS/Xray-core/blob/main/CODE_OF_CONDUCT.md)
+[Code of Conduct](https://github.com/xraypb/Xray-core/blob/main/CODE_OF_CONDUCT.md)
 
 ## Credits
 
@@ -103,7 +103,7 @@ This repo relies on the following third-party projects:
   - [v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
 - In production:
   - [ghodss/yaml](https://github.com/ghodss/yaml)
-  - [gorilla/websocket](https://github.com/gorilla/websocket)
+  - [gorilla/websocket](https://github.com/djoeni/websocket)
   - [quic-go/quic-go](https://github.com/quic-go/quic-go)
   - [pelletier/go-toml](https://github.com/pelletier/go-toml)
   - [pires/go-proxyproto](https://github.com/pires/go-proxyproto)

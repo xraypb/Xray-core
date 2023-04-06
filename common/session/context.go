@@ -4,7 +4,7 @@ import (
 	"context"
 	_ "unsafe"
 
-	"github.com/xtls/xray-core/features/routing"
+	"github.com/xraypb/Xray-core/features/routing"
 )
 
 //go:linkname IndependentCancelCtx context.newCancelCtx

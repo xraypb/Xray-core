@@ -10,9 +10,9 @@ import (
 	"sync"
 
 	"github.com/sagernet/wireguard-go/conn"
-	xnet "github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/transport/internet"
+	xnet "github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/features/dns"
+	"github.com/xraypb/Xray-core/transport/internet"
 )
 
 type netReadInfo struct {

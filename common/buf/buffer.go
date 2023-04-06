@@ -3,8 +3,8 @@ package buf
 import (
 	"io"
 
-	"github.com/xtls/xray-core/common/bytespool"
-	"github.com/xtls/xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/bytespool"
+	"github.com/xraypb/Xray-core/common/net"
 )
 
 const (

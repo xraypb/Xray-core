@@ -1,6 +1,6 @@
 package encoding
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/xraypb/Xray-core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -13,16 +13,16 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy/vless"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/errors"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/session"
+	"github.com/xraypb/Xray-core/common/signal"
+	"github.com/xraypb/Xray-core/features/stats"
+	"github.com/xraypb/Xray-core/proxy/vless"
+	"github.com/xraypb/Xray-core/transport/internet/stat"
+	"github.com/xraypb/Xray-core/transport/internet/tls"
 )
 
 const (

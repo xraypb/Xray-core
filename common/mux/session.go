@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/xudp"
-	"github.com/xtls/xray-core/transport/pipe"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/buf"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol"
+	"github.com/xraypb/Xray-core/common/xudp"
+	"github.com/xraypb/Xray-core/transport/pipe"
 )
 
 type SessionManager struct {

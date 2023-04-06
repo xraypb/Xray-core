@@ -8,12 +8,12 @@ import (
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/logging"
 	"github.com/quic-go/quic-go/qlog"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol/tls/cert"
-	"github.com/xtls/xray-core/common/signal/done"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/tls"
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/common/protocol/tls/cert"
+	"github.com/xraypb/Xray-core/common/signal/done"
+	"github.com/xraypb/Xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/transport/internet/tls"
 )
 
 // Listener is an internet.Listener that listens for TCP connections.

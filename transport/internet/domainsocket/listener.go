@@ -9,13 +9,13 @@ import (
 	"os"
 	"strings"
 
+	"github.com/xraypb/Xray-core/common"
+	"github.com/xraypb/Xray-core/common/net"
+	"github.com/xraypb/Xray-core/transport/internet"
+	"github.com/xraypb/Xray-core/transport/internet/reality"
+	"github.com/xraypb/Xray-core/transport/internet/stat"
+	"github.com/xraypb/Xray-core/transport/internet/tls"
 	goreality "github.com/xtls/reality"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/reality"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
 	"golang.org/x/sys/unix"
 )
 
